@@ -6,12 +6,21 @@ package com.yangmuyao.functions;
 
 import com.yangmuyao.alg.AlgException;
 
+import java.io.IOException;
+
 /**
  * 函数借口,提供输入-输出的映射
  */
 public interface IFunction {
 
+    /**
+     *
+     * @param x
+     * @return
+     * @throws AlgException
+     */
     public double [][]  value( double [][] x) throws AlgException;
+
 
 }
 

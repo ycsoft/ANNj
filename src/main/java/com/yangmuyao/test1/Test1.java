@@ -2,6 +2,7 @@ package com.yangmuyao.test1;
 
 import com.yangmuyao.alg.BP;
 import com.yangmuyao.data.SinTanExp;
+import com.yangmuyao.functions.YXD_Sin;
 
 /**
  * Created by apple on 16-6-25.
@@ -16,13 +17,13 @@ public class Test1 {
         int   len = 400;
 
         double [][]x = new double[len][ind];
-        double [][]y = new double[len][outd];
+        double [][]y = null;
 
         for( int i = 0 ; i < len; i++)
         {
             x[i][0] = 0.01 * i;
-            y[i][0] = Math.sin( x[i][0] );
         }
+        y = new YXD_Sin().value(x);
 
         BP  bp = new BP();
 

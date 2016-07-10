@@ -1,7 +1,6 @@
 package com.yangmuyao.functions;
 
 import com.yangmuyao.alg.AlgException;
-import com.yangmuyao.data.*;
 
 /**
  * Created by apple on 16/7/2.
@@ -27,7 +26,7 @@ public class YXD_Sin implements IFunction{
         result = new double[len][dim];
 
         for ( int i = 0 ; i < len; i++){
-            result[i][0] = Math.sin(x[i][0]);
+            result[i][0] = 1 + Math.sin(x[i][0]);
         }
 
         return result;

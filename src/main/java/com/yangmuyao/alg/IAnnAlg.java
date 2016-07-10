@@ -12,7 +12,7 @@ public interface IAnnAlg {
      * @param x : 自变量
      * @param y : 目标输出
      */
-    public void setSample(double [][]x, double [][]y) throws  AlgException;
+    public void setSample(double [][]x, double [][]y) throws Exception;
 
     /**
      * 预测给定输入的输出
@@ -26,5 +26,10 @@ public interface IAnnAlg {
      * @throws AlgException
      */
     public void train() throws  AlgException;
+
+    /**
+     * 关闭,退出
+     */
+    public void close();
 
 }
